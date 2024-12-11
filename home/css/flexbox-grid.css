@@ -22,15 +22,15 @@
     flex-wrap: wrap;
   }
 
-    .main-content > div {
-    background-color: #fff;
-    width: 300px;
-    margin: 10px;
-    text-align: center;
-    line-height: 35px;
-    font-size: 30px;
-    
-  }
+        .main-content > div {
+        background-color: #fff;
+        width: 300px;
+        margin: 10px;
+        text-align: center;
+        line-height: 35px;
+        font-size: 30px;
+        
+    }
   
   .sidebar {
     flex: 1;
