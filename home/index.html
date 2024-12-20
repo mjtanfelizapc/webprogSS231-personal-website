@@ -6,62 +6,114 @@
     <title>Personal Profile Web Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
+            font-family: 'Verdana', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
-        h1 {
+        header {
+            background-color: #add8e6;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
         }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #4a90e2;
+        }
+        section p, section ul {
+            font-size: 1.1em;
+        }
         ul {
-            margin: 10px 0;
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+        .image-gallery {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            justify-content: center;
+        }
+        .image-gallery img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <h1>Personal Profile Web Page</h1>
+    <header>
+        <h1>Personal Profile Web Page</h1>
+    </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Hi, I’m Micharl Tan Feliz. I aspire to build a successful and stable life while enjoying the things I love. I’m an introvert at heart but value being a loyal and dependable friend. In my free time, you’ll find me playing sports, diving into video games, or watching my favorite anime series. Life’s about balance, and I’m always striving to grow while embracing the little joys along the way! </p>
-    </section>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Hi, I’m Micharl Tan Feliz. I aspire to build a successful and stable life while enjoying the things I love. I’m an introvert at heart but value being a loyal and dependable friend. In my free time, you’ll find me playing sports, diving into video games, or watching my favorite anime series. Life’s about balance, and I’m always striving to grow while embracing the little joys along the way!</p>
+        </section>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li>La Consolation College</li>
-            <li>Asia Pacific College</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>La Consolation College</li>
+                <li>Asia Pacific College</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Achievements</h2>
-        <ul>
-            <li>Successfuly defended my Investigatory Project in High School</li></li>
-            <li>An Honor Student in my 1st year in College</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Achievements</h2>
+            <ul>
+                <li>Successfully defended my Investigatory Project in High School</li>
+                <li>An Honor Student in my 1st year in College</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Course</h2>
-        <p>BSCS-SS</p>
-    </section>
+        <section>
+            <h2>Course</h2>
+            <p>BSCS-SS</p>
+        </section>
 
-    <section>
-        <h2>IT Experience</h2>
-        <p>I got to see my father's work through listening sometimes in their meetings and visiting his work. Furthermore, I'm a Senior High student graduate in a STEM strand.</p>
-    </section>
+        <section>
+            <h2>IT Experience</h2>
+            <p>I got to see my father's work through listening sometimes in their meetings and visiting his work. Furthermore, I'm a Senior High student graduate in a STEM strand.</p>
+        </section>
 
-    <section>
-        <h2>Hobbies and Interests</h2>
-        <p>My main hobbies are playing basketball and playing video games. I also like watching action movies and anime.</p>
-    </section>
+        <section>
+            <h2>Hobbies and Interests</h2>
+            <p>My main hobbies are playing basketball and playing video games. I also like watching action movies and anime.</p>
+            <div class="image-gallery">
+                <img src="https://scontent.fmnl16-1.fna.fbcdn.net/v/t39.30808-1/450680922_483235831322405_1362339865127725349_n.jpg?stp=c0.16.1553.1553a_dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=bnQvTWHPPFMQ7kNvgHQA85m&_nc_zt=24&_nc_ht=scontent.fmnl16-1.fna&_nc_gid=AavCvFFWoJxsoatJbSXc_FX&oh=00_AYBDBf3zN24wwXAxBwesjYAxKA9eP30ggOTjDPiqhh-VOg&oe=676A9B1E" alt="Micharl">
+                <img src="https://via.placeholder.com/150?text=Video+Games" alt="Video Games">
+                <img src="https://via.placeholder.com/150?text=Video+Games" alt="Video Games">
+            </div>
+        </section>
 
-    <section>
-        <h2>Goals</h2>
-        <p>My goals are to graduate from college and get a job that can support me and my significant other and have enough to help my parents.</p>
-        <h3>Dreams</h3>
-        <p>My dreams are getting rich, buying what I want, and marrying the girl I love.</p>
-    </section>
+        <section>
+            <h2>Goals</h2>
+            <p>My goals are to graduate from college and get a job that can support me and my significant other and have enough to help my parents.</p>
+            <h3>Dreams</h3>
+            <p>My dreams are getting rich, buying what I want, and marrying the girl I love.</p>
+        </section>
+    </main>
 </body>
 </html>
+
