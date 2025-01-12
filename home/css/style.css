@@ -1,34 +1,103 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue for anime theme */
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-image: linear-gradient(to right, #ff7eb3, #ff758c);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ff758c;
+}
+header h1 {
+    font-family: 'Pacifico', cursive; /* Anime-like font */
+    font-size: 2.5em;
+    margin: 0;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.nav-links a:hover {
+    color: #ffe4e1; /* Soft pink for hover effect */
+}
+
+/* Section Styling */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+section h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: #ff758c;
+    margin-bottom: 10px;
+}
+section p, section ul {
+    font-size: 1.2em;
+}
+
+/* Gallery Styling */
 .image-gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 15px;
+    margin-top: 20px;
 }
 .image-gallery img {
-    width: 150px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 20px;
 }
 input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
+    padding: 15px;
+    border: 2px solid #ff7eb3;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-family: 'Comic Sans MS', sans-serif;
 }
 button {
-    padding: 10px 20px;
+    padding: 10px 25px;
     border: none;
-    border-radius: 5px;
-    background-color: #4a90e2;
+    border-radius: 10px;
+    background-color: #ff758c;
     color: white;
-    font-size: 1em;
+    font-size: 1.2em;
     cursor: pointer;
+    font-family: 'Comic Sans MS', sans-serif;
 }
 button:hover {
-    background-color: #357abd;
+    background-color: #ff5263;
 }
