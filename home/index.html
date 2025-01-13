@@ -1,12 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    
-   
+    <title>Micharl's Anime-Themed Profile</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue for anime theme */
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-image: linear-gradient(to right, #ff7eb3, #ff758c);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #ff758c;
+        }
+        header h1 {
+            font-family: 'Pacifico', cursive; /* Anime-like font */
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .nav-links a:hover {
+            color: #ffe4e1; /* Soft pink for hover effect */
+        }
+
+        /* Section Styling */
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        section h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2em;
+            color: #ff758c;
+            margin-bottom: 10px;
+        }
+        section p, section ul {
+            font-size: 1.2em;
+        }
+
+        /* Gallery Styling */
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        input, textarea {
+            padding: 15px;
+            border: 2px solid #ff7eb3;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+        button {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff758c;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+        button:hover {
+            background-color: #ff5263;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const app = Vue.createApp({
+                data() {
+                    return {
+                        comments: [],
+                        newComment: {
+                            name: '',
+                            comment: ''
+                        }
+                    };
+                },
+                methods: {
+                    addComment() {
+                        if (this.newComment.name && this.newComment.comment) {
+                            this.comments.push({ ...this.newComment });
+                            this.newComment.name = '';
+                            this.newComment.comment = '';
+                        }
+                    }
+                }
+            });
+
+            app.component('picture-gallery', {
+                template: `
+                    <div class="image-gallery">
+                        <img src="https://example.com/anime1.jpg" alt="Anime 1">
+                        <img src="https://example.com/anime2.jpg" alt="Anime 2">
+                        <img src="https://example.com/anime3.jpg" alt="Anime 3">
+                    </div>
+                `
+            });
+
+            app.component('guestbook-form', {
+                template: `
+                    <div>
+                        <form @submit.prevent="submitComment">
+                            <input v-model="name" type="text" placeholder="Your Name" required>
+                            <textarea v-model="message" placeholder="Your Comment" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                        <ul>
+                            <li v-for="comment in comments" :key="comment.id">
+                                <strong>{{ comment.name }}</strong>: {{ comment.message }}
+                            </li>
+                        </ul>
+                    </div>
+                `,
+                data() {
+                    return {
+                        name: '',
+                        message: '',
+                        comments: []
+                    };
+                },
+                methods: {
+                    submitComment() {
+                        this.comments.push({ name: this.name, message: this.message });
+                        this.name = '';
+                        this.message = '';
+                    }
+                }
+            });
+
+            app.mount('#app');
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -55,9 +226,6 @@
         </section>
     </main>
 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="js/vue.js"></script>
-    
     <footer>
         <p>&copy; 2025 Micharl Tan Feliz. All rights reserved.</p>
     </footer>
