@@ -3,37 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micharl's Anime-Themed Profile</title>
+    <title>Personal Website</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.min.js"></script>
-    <script src="js/vue.js"></script>
+    <script src="js/vue.js" defer></script>
 </head>
-<body>
+<body :style="{ backgroundColor: backgroundColor }">
     <header>
-        <div class="header-container">
-            <h1>Micharl's Anime World</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#achievements">Achievements</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#comments">Comments</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Mico's World</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#comments">Comments</a></li>
+            </ul>
+        </nav>
+        <button @click="changeBackgroundColor">Change Background</button>
     </header>
 
     <main id="app">
-        <section id="about" class="section">
+        <section id="about">
             <h2>About Me</h2>
-            <p>
-                Welcome to my anime-themed personal profile! I'm Micharl Tan Feliz, an aspiring cloud specialist with a passion for anime, gaming, and personal growth. Explore my world below!
-            </p>
+            <p>Welcome to my personal webpage! I'm Micharl Tan Feliz, an aspiring cloud specialist with a passion for anime, gaming, and personal growth. Explore my world below!</p>
         </section>
 
-        <section id="education" class="section">
+        <section id="education">
             <h2>Education</h2>
             <ul>
                 <li>La Consolation College</li>
@@ -41,7 +37,7 @@
             </ul>
         </section>
 
-        <section id="achievements" class="section">
+        <section id="achievements">
             <h2>Achievements</h2>
             <ul>
                 <li>Defended my Investigatory Project in High School</li>
@@ -49,12 +45,12 @@
             </ul>
         </section>
 
-        <section id="gallery" class="section">
+        <section id="gallery">
             <h2>Gallery</h2>
             <image-gallery></image-gallery>
         </section>
 
-        <section id="comments" class="section">
+        <section id="comments">
             <h2>Comments/Guestbook</h2>
             <guestbook-form></guestbook-form>
         </section>
