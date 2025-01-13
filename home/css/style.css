@@ -10,11 +10,11 @@
 
         /* Header Styling */
         header {
-            background-image: linear-gradient(to right, #ff7eb3, #ff758c);
+            background-image: linear-gradient(to right, #1b0791, #070ac2);
             color: white;
             padding: 20px;
             text-align: center;
-            border-bottom: 5px solid #ff758c;
+            border-bottom: 5px solid #030edf;
         }
         header h1 {
             font-family: 'Pacifico', cursive; /* Anime-like font */
@@ -51,7 +51,7 @@
         section h2 {
             font-family: 'Pacifico', cursive;
             font-size: 2em;
-            color: #ff758c;
+            color: #04087a;
             margin-bottom: 10px;
         }
         section p, section ul {
@@ -85,7 +85,7 @@
         }
         input, textarea {
             padding: 15px;
-            border: 2px solid #ff7eb3;
+            border: 2px solid #7e96ff;
             border-radius: 10px;
             font-size: 1.2em;
             font-family: 'Comic Sans MS', sans-serif;
@@ -94,13 +94,13 @@
             padding: 10px 25px;
             border: none;
             border-radius: 10px;
-            background-color: #ff758c;
+            background-color: #0019f8;
             color: white;
             font-size: 1.2em;
             cursor: pointer;
             font-family: 'Comic Sans MS', sans-serif;
         }
         button:hover {
-            background-color: #ff5263;
+            background-color: #8cd6ef;
         }
     
