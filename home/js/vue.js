@@ -25,10 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     '#ffebcd', 
                     '#add8e6', 
                     "url('https://img.freepik.com/free-photo/japan-background-digital-art_23-2151546124.jpg')", // << HIGHLIGHTED LINE: Add your URL here
-                    "url('https://img.freepik.com/free-photo/illustration-anime-city_23-2151779669.jpg')"
+                    
                 ];
-                // Randomly pick a color or image URL
-                this.backgroundColor = colorsOrImages[Math.floor(Math.random() * colorsOrImages.length)];
+                
             }
         }
     });
