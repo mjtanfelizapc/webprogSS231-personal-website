@@ -21,7 +21,7 @@
                 }
             });
 
-            app.component('picture-gallery', {
+            app.component('image-gallery', {
                 template: `
                     <div class="image-gallery">
                         <img src="https://scontent.fmnl16-1.fna.fbcdn.net/v/t39.30808-6/450680922_483235831322405_1362339865127725349_n.jpg?stp=c0.163.1553.1553a_dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHDGuUQ8Ja3XSPvYCaHcomneVmHhSqJuGB5WYeFKom4YDjk4oGUUTlltna9Vai1EN3ARnnUavoeCeZPo0AiImGr&_nc_ohc=O49esINq2JUQ7kNvgGrcpUd&_nc_zt=23&_nc_ht=scontent.fmnl16-1.fna&_nc_gid=AeXRT9zlw-zdX7P6bnJaJBb&oh=00_AYBhcXoL9QHonY8Zer63a3FB68TgB5FZgSYdJ92u-hVrWw&oe=678A41DC" alt="Micharl">
