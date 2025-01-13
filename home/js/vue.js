@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const app = Vue.createApp({
         data() {
             return {
-                backgroundColor: '#f0f8ff', // Default background color
                 comments: [],
                 newComment: {
                     name: '',
@@ -17,17 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     this.newComment.name = '';
                     this.newComment.comment = '';
                 }
-            },
-            changeBackgroundColor() {
-                // Array of background options (colors or image URLs)
-                const colorsOrImages = [
-                    '#f0f8ff', 
-                    '#ffebcd', 
-                    '#add8e6', 
-                    "url('https://img.freepik.com/free-photo/japan-background-digital-art_23-2151546124.jpg')", // << HIGHLIGHTED LINE: Add your URL here
-                    
-                ];
-                
             }
         }
     });
