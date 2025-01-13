@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    app.component('image-gallery', {
+    app.component('picture-gallery', {
         template: 
-            `<div class="image-gallery">
+            `<div class="picture-gallery">
                 <img src="https://www.facebook.com/1ae3bf3f-e0d3-409c-afdf-0da68ba5b2cf" alt="Image 1">
                 <img src="https://scontent.fmnl16-1.fna.fbcdn.net/v/t39.30808-6/444151246_25416888527958919_6702975813948719261_n.jpg" alt="Image 2">
                 <img src="https://scontent.fmnl16-1.fna.fbcdn.net/v/t39.30808-6/436404769_25302485046065935_7458906254374629587_n.jpg" alt="Image 3">
