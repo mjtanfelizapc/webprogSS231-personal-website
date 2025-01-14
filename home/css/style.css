@@ -1,5 +1,3 @@
-/* Updated CSS with background image and improved gallery design */
-
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -10,7 +8,7 @@ body {
 }
 
 header {
-    background-color: rgba(0, 64, 128, 0.9); /* Semi-transparent deep blue */
+    background-color: rgba(0, 64, 128, 0.9);
     color: white;
     padding: 2rem;
     text-align: center;
@@ -36,7 +34,7 @@ header {
 }
 
 .nav-links a:hover {
-    color: #add8e6; /* Light blue */
+    color: #add8e6;
 }
 
 main {
@@ -47,8 +45,8 @@ main {
 h2 {
     color: white;
     margin-bottom: 1rem;
-    font-size: 2rem; /* Larger font size for headings */
-    background-color: rgba(0, 64, 128, 0.9); /* Deep blue background */
+    font-size: 2rem;
+    background-color: rgba(0, 64, 128, 0.9);
     padding: 0.5rem 1rem;
     border-radius: 5px;
     display: inline-block;
@@ -56,16 +54,10 @@ h2 {
 
 section {
     margin-bottom: 2rem;
-    background-color: rgba(0, 0, 128, 0.8); /* Semi-transparent deep blue */
+    background-color: rgba(0, 0, 128, 0.8);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-section p, section ul {
-    color: #f5f5f5;
-    font-size: 1.3rem; /* Larger font size for body text */
-    line-height: 1.8;
 }
 
 .image-gallery img {
@@ -73,6 +65,8 @@ section p, section ul {
     height: auto;
     display: block;
     margin: 0 auto 1rem;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 
 form {
@@ -82,10 +76,10 @@ form {
 }
 
 input, textarea, button {
-    padding: 1rem; /* Bigger padding for inputs */
+    padding: 1rem;
     border: none;
     border-radius: 4px;
-    font-size: 1.1rem; /* Larger font for form elements */
+    font-size: 1.1rem;
 }
 
 input, textarea {
@@ -99,20 +93,20 @@ textarea {
 }
 
 button {
-    background-color: #004080; /* Deep blue */
+    background-color: #004080;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #00264d; /* Darker blue */
+    background-color: #00264d;
 }
 
 footer {
     text-align: center;
     padding: 1.5rem;
-    background-color: rgba(0, 64, 128, 0.9); /* Semi-transparent deep blue */
+    background-color: rgba(0, 64, 128, 0.9);
     color: white;
     font-size: 1.1rem;
 }
